@@ -1,9 +1,9 @@
 package borm
 
-import "peterdekok.nl/gotools/logger"
+import (
+	"peterdekok.nl/gotools/borm/model"
+)
 
-var log logger.Logger
-
-func init() {
-    log = logger.New("borm")
-}
+type Model model.Model
+type ModelInterface model.Interface
+type CollectionInterface model.CollectionInterface
